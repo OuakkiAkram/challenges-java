@@ -1,8 +1,14 @@
+import com.sun.security.jgss.GSSUtil;
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -139,19 +145,101 @@ public class Main {
 
 //        ------------------- CHALLENGE 7 --------------------------------------
 
-        int[] numbers = {2, 3, 2, 5, 3};
-        HashMap<Integer, Integer> objectOfNumbers = new HashMap<>();
+//        int[] numbers = {2, 3, 2, 5, 3};
+//        HashMap<Integer, Integer> objectOfNumbers = new HashMap<>();
+//
+//        int counter = 0;
+//
+//        for (int i = 0; i < numbers.length; i++) {
+//            int key = numbers[i];
+//            if (objectOfNumbers.containsKey(key)) {
+//                objectOfNumbers.put(key, objectOfNumbers.get(key)+1);
+//            }else{
+//                objectOfNumbers.put(key, 1);
+//            }
+//        }
+//
+//        System.out.println(objectOfNumbers);
 
-        int counter = 0;
+//        ------------------- CHALLENGE 8 --------------------------------------
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (objectOfNumbers.containsKey(numbers[i])) {
-                objectOfNumbers.put(numbers[i], counter++);
-            }else{
-                objectOfNumbers.put(numbers[i], 0);
-            }
-        }
+//        int[] numbers= {2, 6, 1, 4, 5};
+//        int cible = 6;
+//
+//        for(int i=0; i<numbers.length; i++){
+//            for(int j=0; j<numbers.length; j++){
+//                int result = numbers[i] + numbers[j];
+//                if(result == cible){
+//                    System.out.printf("%d + %d = %d\n",  numbers[i], numbers[j], result);
+//                }
+//            }
+//        }
 
-        System.out.println(objectOfNumbers);
+//        ------------------- CHALLENGE 9 --------------------------------------
+
+//        int[] numbers1 = {1, 2, 3, 4};
+//        int[] numbers2 = {3, 4, 5, 6};
+//        List<Integer> commonElements = new ArrayList<>();
+//
+//        HashSet<Integer> setNumbers1 = new HashSet<>();
+//        HashSet<Integer> setNumbers2 = new HashSet<>();
+//
+//        for (int i = 0; i < numbers1.length; i++) {
+//            setNumbers1.add(numbers1[i]);
+//        }
+//
+//        for (int i = 0; i < numbers2.length; i++) {
+//            setNumbers2.add(numbers2[i]);
+//        }
+//
+//        for (int number1 : setNumbers1) {
+//            for (int number2 : setNumbers2) {
+//                if (number1 == number2) {
+//                    commonElements.add(number1);
+//                }
+//            }
+//        }
+//
+//        System.out.println(setNumbers1);
+//        System.out.println(setNumbers2);
+//        System.out.println(commonElements);
+
+//        ------------------- CHALLENGE 10 --------------------------------------
+
+//        String phrase = "Le chat et le chien et le chat";
+//        phrase = phrase.toLowerCase();
+//
+//        HashMap<String, Integer> object = new HashMap<>();
+//
+//        String[] words = phrase.split(" ");
+//
+//        for (String word : words) {
+//            if (object.containsKey(word)) {
+//                object.put(word, object.get(word) + 1);
+//            } else {
+//                object.put(word, 1);
+//            }
+//        }
+//
+//        int max = 0;
+//        String wordFrequent = "";
+//        for (String word : object.keySet()) {
+//            if (object.get(word) > max) {
+//                max = object.get(word);
+//                wordFrequent = word;
+//            }
+//        }
+//        System.out.println("Mot le plus frequent: " + wordFrequent);
+
+//        ------------------- CHALLENGE 11 --------------------------------------
+
+//        int[] numbers = {1, 3, 5, 2, 2};
+//
+//        int sum = 0;
+//        for (int i = 0; i < numbers.length; i++) {
+//            sum += numbers[i];
+//        }
+//        System.out.println(sum);
+
     }
 }
