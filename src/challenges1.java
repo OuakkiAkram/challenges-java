@@ -1,16 +1,4 @@
-import com.sun.security.jgss.GSSUtil;
-
-import java.sql.SQLOutput;
-import java.util.Scanner;
-import java.util.Random;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.HashSet;
-import java.util.ArrayList;
-import java.util.List;
-
-public class Main {
+public class challenges1 {
     public static void main(String[] args) {
 
 //        ------------------- CHALLENGE 1 --------------------------------------
